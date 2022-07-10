@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 int main ()
 {
@@ -9,11 +8,8 @@ int b;
 b = 0;
 int *pointeur;
 pointeur = &b;
-printf("la valeur de b est %d\n", b); 
-printf("je recupere la valeur de b grace au pointeur %d\n", *pointeur);
 ft_ft(pointeur);
 printf("la valeur de b est %d\n", b); 
-printf("la valeur du pointeur est %d\n", pointeur);
 */
 
 /* ft_ultimate_ft
@@ -39,7 +35,7 @@ printf("la valeur du pointeur est %d\n", pointeur);
 	p9 = &p8;
 	
 	ft_ultimate_ft (p9);
-	printf("je recupere la valeur de b grace au pointeur p9 %d\n", nbr);
+	printf("nbr = %d\n", nbr);
 */
 
 /*ft_swap
@@ -67,8 +63,8 @@ printf("apres swap e = %d\n", *b);
 	int	*div;
 	int	*mod;
 		
-	a = 10;
-	b = 0;
+	a = 1337;
+	b = 42;
 	div = &a;
 	mod = &b;
 
@@ -76,7 +72,7 @@ printf("apres swap e = %d\n", *b);
 	ft_div_mod(a, b, div, mod);
 
 
-	printf("le produit de la division est %d\n", *div);
+	printf("Le produit de la division est %d\n", *div);
 	printf("la retenue de la division est %d\n", *mod);
 */
 
@@ -89,7 +85,7 @@ printf("apres swap e = %d\n", *b);
 
 	
 	c = 14;
-	d = 0;
+	d = 2;
 	a = &c;
 	b = &d;
 
